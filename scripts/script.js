@@ -1,18 +1,19 @@
 $(document).ready(function () {
-  $("#buffDoge").click(function () {
-    console.log("position: ", $("#buffDoge").position());
+  $("#weakDoge").click(function () {
+    //code goes here
+    console.log("position: ", $("#weakDoge").position());
   });
   
-//Draggable element. 
-  $("#buffDoge").draggable({ 
+
+  $("#weakDoge").draggable({ 
     stop: function () {
-  if ($("#buffDoge").position().left > 400 && $("#buffDoge").position().left < 650) 
+    //code goes here
+  if ($("#weakDoge").position().left > 400 && $("#weakDoge").position().left < 650) 
       {
        console.log("test")
       }
     }
   });
-//Droppable element. 
   $( "#cartoonGym" ).droppable({
     drop: function()
     {
@@ -20,6 +21,16 @@ $(document).ready(function () {
       $("#cartoonGym").attr(
       "src",
       'https://resources.licensingprep.com/wp-content/uploads/2019/09/cheers-congratulations-meme.jpg');
+      
+      $('#weakDoge').attr(
+        "src", 'https://youtooz.com/cdn/shop/products/swoledoge_characterai_ry-min.png?v=1606473011');
+      
+      $("#congratsMess").html(goodjobMessage);
     }
   });
 });
+
+const goodjobMessage = () => {
+  let message = "Good Job!!!";
+  return message;
+}

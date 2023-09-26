@@ -1,37 +1,27 @@
 <!DOCTYPE html>
 <html lang="en" >
-  <!--
-    v2.0 Changes:
-    html: Changes have been made to the tags of the html elements to help with development and readability, the use of semantic tags are being used except for elements whose names are already being used in another file like 'h1 and h3'.
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Charlie-DaltRodg</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
 
-    CSS: CSS saw changes to make rulesets concise by making compound rulesets effecting the h1, h3, and the h4 element. I also added
-    color to the text and added a background texture to the body, I also added a color to the background texture but could not get it to stick. 
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<h1> Welcome to the Doge Game.</h1>
 
-    JQuery: I added another JQuery method called droppable() which is paired with draggable(). I utilized the draggable element to be dropped on the droppable element for the droppable elment to switch to a congrats graphic when the action has been completed.
-  -->
-  <head>
-    <link rel="stylesheet" href="styles/style.css"
-    <meta charset="UTF-8">
-    <title>Daltrodg Doge Game</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
+<h3>Drag the Buff Doge to the Gym!!!</h3>
+<h4>A Game by Dalton</h4>
+<body>
+  <img id='cartoonGym' src='https://media.istockphoto.com/id/1160924514/vector/cartoon-interior-inside-home-gym-with-window-vector.jpg?s=612x612&w=0&k=20&c=Qk9fenzLcqkhZB1XDwxN_OMrRjhjCAp2BdzWLLlLYn4=' alt='Buff Doges workout' class='float-end' height='300' width='500'>
+  <img id="weakDoge" src='https://i.kym-cdn.com/photos/images/original/002/644/629/e77.jpg' height='300' width='300'>
+  
+  <h2 id='congratsMess'></h2>
 
-  </head>
-  <body>
-   <!-- HTML Content -->
-    <h1> Welcome to the Doge Game.</h1>
+</body>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js'></script><script  src="./script.js"></script>
 
-    <h3>Drag the Buff Doge to the Gym!!!</h3>
-    <h4>A Game by Dalton Rodgers</h4>
-    <figure>
-      <img id="buffDoge" src="https://youtooz.com/cdn/shop/products/swoledoge_characterai_ry-min.png?v=1606473011" alt="buff doge" height="400" width="">
-    </figure>
-    <figure>
-      <img id='cartoonGym' src='https://media.istockphoto.com/id/1160924514/vector/cartoon-interior-inside-home-gym-with-window-vector.jpg?s=612x612&w=0&k=20&c=Qk9fenzLcqkhZB1XDwxN_OMrRjhjCAp2BdzWLLlLYn4=' alt='Buff Doges workout' class='float-end' height='300' width='500'>
-    </figure>
-   <!-- Script links -->
-   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js'></script>
-   <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js'></script>
-   <script  src="scripts/script.js"></script>
-
-  </body>
+</body>
 </html>
